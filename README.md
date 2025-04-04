@@ -1,4 +1,4 @@
-# FitSync
+# FitSync (Updated)
 
 A Pen created on CodePen.
 
