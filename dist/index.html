@@ -1,165 +1,244 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>FitSync</title>
-  <link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FitSync</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <main>
+      <!-- Start of pages -->
+      <div class="page-container">
+        <!-- Start of Workout page -->
+        <div id="workout" class="page">
+          <h1>Workout</h1>
+          <div class="workout-page-top-row">
+            <h1>
+              <span
+                id="workout-timer"
+                style="display: inline-block; width: 150px; text-align: left"
+              >
+                00:00:00
+              </span>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<main>
-	<!-- Start of pages -->
-	<div class="page-container">
-		<div id="workout" class="page">
-			<h1>Workout</h1>
-			<div class="workout-page-top-row">
-				<h1>Duration: 01:24:23 (Active)</h1>
-				<button class="finish-workout-button">Finish</button>
-			</div>
-			
+              <button id="pause-timer-button">Start</button>
+            </h1>
+            <button class="finish-workout-button">Finish</button>
+          </div>
 
-			<div class="exercises-container">
+          <div class="exercises-container">
+            <!-- SQUAT -->
+            <div class="exercise-container">
+              <div
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <h1 style="margin-right: auto">Squat</h1>
+                <button class="dropdown-toggle">▼</button>
+              </div>
 
-				
-				<!-- SQUAT -->
-				<div class="exercise-container">
-					<div style="display: flex; flex-direction: row; align-items: center;">
-						<h1 style="margin-right: auto;">Squat</h1>
-						<button class="dropdown-toggle">▼</button>
-					</div>
-					
-					<div class="exercise-selection-container dropdown-panel">
+              <div class="exercise-selection-container dropdown-panel">
+                <div class="exercise-top-row">
+                  <div class="exercise-title-container">
+                    <h1>Set</h1>
+                  </div>
+                  <div class="lbs-reps-remove-container">
+                    <div class="lbs-reps-container">
+                      <h1>lbs</h1>
+                      <h1>Reps</h1>
+                    </div>
+                  </div>
+                </div>
 
-					<div class="exercise-top-row">
-						<div class="exercise-title-container">
-							<h1>Set</h1>
-							
-						</div>
-						<div class="lbs-reps-remove-container">
-							<div class="lbs-reps-container">
-								<h1>lbs</h1>
-								<h1>Reps</h1>
-							</div>
-							
-							
-						</div>
-						
+                <div class="exercise-sets-container"></div>
 
-					</div>
-				
-					<div class="exercise-sets-container">
-						
-					</div>
+                <button class="add-set-button">+ Add Set</button>
+              </div>
+            </div>
 
-					<button class="add-set-button">+ Add Set</button>
+            <!-- Bench -->
+            <div class="exercise-container">
+              <div
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <h1 style="margin-right: auto">Bench</h1>
+                <button class="dropdown-toggle">▼</button>
+              </div>
 
-				</div>
-				</div>
-				
-				<!-- Bench -->
-				<div class="exercise-container">
-					<div style="display: flex; flex-direction: row; align-items: center;">
-						<h1 style="margin-right: auto;">Bench</h1>
-						<button class="dropdown-toggle">▼</button>
-					</div>
-					
-					<div class="exercise-selection-container dropdown-panel">
+              <div class="exercise-selection-container dropdown-panel">
+                <div class="exercise-top-row">
+                  <div class="exercise-title-container">
+                    <h1>Set</h1>
+                  </div>
+                  <div class="lbs-reps-remove-container">
+                    <div class="lbs-reps-container">
+                      <h1>lbs</h1>
+                      <h1>Reps</h1>
+                    </div>
+                  </div>
+                </div>
 
-					<div class="exercise-top-row">
-						<div class="exercise-title-container">
-							<h1>Set</h1>
-							
-						</div>
-						<div class="lbs-reps-remove-container">
-							<div class="lbs-reps-container">
-								<h1>lbs</h1>
-								<h1>Reps</h1>
-							</div>
-							
-							
-						</div>
-						
+                <div class="exercise-sets-container"></div>
 
-					</div>
-				
-					<div class="exercise-sets-container">
-						
-					</div>
+                <button class="add-set-button">+ Add Set</button>
+              </div>
+            </div>
 
-					<button class="add-set-button">+ Add Set</button>
+            <!-- Deadlift -->
+            <div class="exercise-container">
+              <div
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <h1 style="margin-right: auto">Deadlift</h1>
+                <button class="dropdown-toggle">▼</button>
+              </div>
 
-				</div>
-				</div>
-				
-				
-				<!-- Deadlift -->
-				<div class="exercise-container">
-					<div style="display: flex; flex-direction: row; align-items: center;">
-						<h1 style="margin-right: auto;">Deadlift</h1>
-						<button class="dropdown-toggle">▼</button>
-					</div>
-					
-					<div class="exercise-selection-container dropdown-panel">
+              <div class="exercise-selection-container dropdown-panel">
+                <div class="exercise-top-row">
+                  <div class="exercise-title-container">
+                    <h1>Set</h1>
+                  </div>
+                  <div class="lbs-reps-remove-container">
+                    <div class="lbs-reps-container">
+                      <h1>lbs</h1>
+                      <h1>Reps</h1>
+                    </div>
+                  </div>
+                </div>
 
-					<div class="exercise-top-row">
-						<div class="exercise-title-container">
-							<h1>Set</h1>
-							
-						</div>
-						<div class="lbs-reps-remove-container">
-							<div class="lbs-reps-container">
-								<h1>lbs</h1>
-								<h1>Reps</h1>
-							</div>
-							
-							
-						</div>
-						
+                <div class="exercise-sets-container"></div>
 
-					</div>
-				
-					<div class="exercise-sets-container">
-						
-					</div>
+                <button class="add-set-button">+ Add Set</button>
+              </div>
+            </div>
 
-					<button class="add-set-button">+ Add Set</button>
+            <!-- Notes -->
+            <div class="exercise-container">
+              <div
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <h1 style="margin-right: auto">Notes</h1>
+                <button class="dropdown-toggle">▼</button>
+              </div>
 
-				</div>
-				</div>
+              <div class="exercise-selection-container dropdown-panel">
+                <textarea
+                  id="notes-textarea"
+                  rows="5"
+                  cols="50"
+                  placeholder="Type your notes here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Workout page -->
 
-				
-			</div>
+        <!-- Start of Progress page -->
+        <div id="progress" class="page" style="display: none">
+          <h1>Progress</h1>
+          <h2>Current Goals</h2>
+          <div></div>
+          <h2>Exercise Records</h2>
+          <button>Add</button>
+        </div>
+        <!-- End of Progress page -->
 
-		</div>
-		<div id="progress" class="page" style="display: none;">
-			<h1>Progress</h1>
-			<h2>Current Goals</h2>
-			<div></div>
-			<h2>Exercise Records</h2>
-			<button>Add </button>
-		</div>
-		<div id="nutrition" class="page" style="display: none;">
-			<h1>Nutrition</h1>
-		</div>
-		<div id="profile" class="page" style="display: none;">
-			<h1>Profile</h1>
-		</div>
-	</div>
-	<!-- End of pages -->
+        <!-- Start of Nutrition page -->
+        <div id="nutrition" class="page" style="display: none">
+          <h1>Nutrition</h1>
+        </div>
+        <!-- End of Nutrition page -->
 
-	<!-- Navigation bar -->
-	<nav class="navbar">
-		<ul>
-			<li><a href="#" data-page="workout" id="workout-link">Workout</a></li>
-			<li><a href="#" data-page="progress" id="progress-link">Progress</a></li>
-			<li><a href="#" data-page="nutrition" id="nutrition-link">Nutrition</a></li>
-			<li><a href="#" data-page="profile" id="profile-link">Profile</a></li>
-		</ul>
-	</nav>
-</main>
-<!-- partial -->
-  <script  src="./script.js"></script>
+        <!-- Start of Profile page -->
+        <div id="profile" class="page" style="display: none">
+          <h1>Profile</h1>
+        </div>
+        <!-- End of Profile page -->
+      </div>
+      <!-- End of pages -->
 
-</body>
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <ul>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="size-6"
+              style="width: 25px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+
+            <a href="#" data-page="workout" id="workout-link">Workout</a>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="size-6"
+              style="width: 25px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <a href="#" data-page="progress" id="progress-link">Progress</a>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="size-6"
+              style="width: 25px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <a href="#" data-page="nutrition" id="nutrition-link">Nutrition</a>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="size-6"
+              style="width: 25px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+
+            <a href="#" data-page="profile" id="profile-link">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <!-- partial -->
+    <script src="./script.js"></script>
+  </body>
 </html>
